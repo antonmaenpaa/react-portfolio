@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    position: fixed;
+    height: 5rem;
+    z-index: 100;
+
+}
+
+.nav-container {
+    width: 80%;
+}
+
+/* .toggle {
+    top: 0;
+} */
