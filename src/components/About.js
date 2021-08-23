@@ -1,6 +1,9 @@
 function About() {
     return(
-        <h1>About</h1>
+        <div className="flex full-width full-height centerH centerY">
+            <h1>About</h1>
+
+        </div>
     )
 }
 

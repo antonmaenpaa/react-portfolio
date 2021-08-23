@@ -1,6 +1,9 @@
 function Projects() {
     return(
-        <h1>Projects</h1>
+        <div className="flex full-width full-height centerH centerY">
+            <h1>Projects</h1>
+
+        </div>
     )
 }
 

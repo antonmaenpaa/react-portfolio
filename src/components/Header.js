@@ -47,7 +47,7 @@ const closeMenuAndNavigate = () => {
                 },
             })
 
-            gsap.from(".li-links", {
+            gsap.from(".links", {
                 duration: 0.5,
                 opacity: 0,
                 x: 150,
@@ -69,10 +69,37 @@ const closeMenuAndNavigate = () => {
         </div>
 
         <ul id="menu">
-            <Link onClick={closeMenuAndNavigate} to="/"><li className="li-links">HOME</li></Link>
-            <Link onClick={closeMenuAndNavigate} to="/projects"><li className="li-links">PROJECTS</li></Link>
-            <Link onClick={closeMenuAndNavigate} to="/about"><li className="li-links">ABOUT</li></Link>
-            <Link onClick={closeMenuAndNavigate} to="/contact"><li className="li-links">CONTACT</li></Link>
+            <div className="flex column align-end">
+                <Link 
+                    className="links" 
+                    onClick={closeMenuAndNavigate} 
+                    to="/">
+                        <span>GO BACK TO&nbsp;</span>
+                        HOME
+                </Link>
+                <Link 
+                    className="links" 
+                    onClick={closeMenuAndNavigate} 
+                    to="/projects">
+                        <span>CHECK OUT MY&nbsp;</span>
+                        PROJECTS
+                </Link>
+                <Link 
+                    className="links" 
+                    onClick={closeMenuAndNavigate} 
+                    to="/about">
+                        <span>READ MORE&nbsp;</span>
+                        ABOUT ME
+                </Link>
+                <Link 
+                    className="links" 
+                    onClick={closeMenuAndNavigate}
+                    to="/contact">
+                        <span>YES, YOU CAN&nbsp;</span>
+                        CONTACT ME
+                </Link>
+
+            </div>
    
         </ul>
 

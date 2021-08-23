@@ -2,7 +2,10 @@
 
 function Main() {
     return(
-        <h1>MAIN</h1>
+        <div className="flex full-width full-height centerH centerY">
+            <h1>MAIN</h1>
+
+        </div>
     )
 }
 
