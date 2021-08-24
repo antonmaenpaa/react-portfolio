@@ -17,7 +17,11 @@ ul {
     text-decoration: none;
     color: #01C6C6;
     font-size: 3rem;
-    margin: 2rem;
+    margin: 2rem 0 2rem 0;
+}
+
+#menu > .link-container > a:hover {
+    color: black;
 }
 
 .links > span {

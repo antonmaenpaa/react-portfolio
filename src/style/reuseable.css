@@ -22,6 +22,10 @@
     align-items: flex-end;
 }
 
+.align-start {
+    align-items: flex-start;
+}
+
 .column {
     flex-direction: column;
 }

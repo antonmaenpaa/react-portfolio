@@ -10,17 +10,11 @@ import {Link} from "react-router-dom";
 
 function Header() {
 
-    // const [isOpen, setOpen] = useState(false);
-
-    // const toggle = () => {
-    //     setOpen(!isOpen);
-    // }
     const [menuIsToggled, setMenuIsToggled] = useState(false);
 
-const closeMenuAndNavigate = () => {
-
-  setMenuIsToggled(false);
-}
+    const closeMenuAndNavigate = () => {
+    setMenuIsToggled(false);
+    }
 
     useEffect(() => {
         if(menuIsToggled === false){
@@ -53,23 +47,48 @@ const closeMenuAndNavigate = () => {
                 x: 150,
                 stagger: 0.25
             })
+
         }
     })
 
-    // console.log(isOpen)
+    
+    const handleContent = (event) => {
+        let positionX = event.clientX / window.innerWidth - 0.55;
+        let positionY = event.clientY / window.innerHeight - 0.55;
+        const maintl = gsap.timeline();
+    
+        maintl.to(".link-container", 1, {
+          rotationY: positionX * 100,
+          rotationX: positionY * 100,
+          ease: "none",
+        });
+      }
+    
+    const reverseContent = () => {
+        const maintl = gsap.timeline();
+        maintl.to(".link-container", 1, {
+          rotationY: 0,
+          rotationX: 0,
+          ease: "power1.out",
+        });
+      }
+
     return(
         <>
         <div className="header flex centerY centerH">
             <div className="nav-container flex centerY space-between">
-                <h1>PORTFOLIO</h1>
-                {/* <Hamburger onToggle={toggle} /> */}
+                <h1>PORTFOLIO.</h1>
                 <Hamburger toggled={menuIsToggled} toggle={setMenuIsToggled} />
             </div>
 
         </div>
 
-        <ul id="menu">
-            <div className="flex column align-end">
+        <ul 
+            id="menu"
+            onMouseMove={handleContent}
+            onMouseLeave={reverseContent}
+            >
+            <div className="flex column align-start link-container">
                 <Link 
                     className="links" 
                     onClick={closeMenuAndNavigate} 
