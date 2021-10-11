@@ -1,0 +1,15 @@
+@media(max-width: 70em) {
+
+    div > .about-paragraph {
+        width: 100%;
+        font-size: smaller;
+        line-height: 2rem;
+    }
+
+    .me-img {
+        width: 20rem;
+        height: auto;
+        clip-path: polygon(29% 2%, 100% 23%, 88% 96%, 20% 100%, 0% 38%);
+    
+    }
+}

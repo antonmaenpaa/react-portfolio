@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 import { Route, Switch } from "react-router";
 import Main from "./components/Main";
 import Projects from "./components/Projects";

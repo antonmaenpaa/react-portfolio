@@ -1,0 +1,95 @@
+.about-container {
+  overflow-x: hidden;
+}
+
+.aboutme-container {
+  width: 80%;
+}
+
+.about-paragraph {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 70%;
+  line-height: 2.5rem;
+  font-size: x-large;
+}
+
+.me-img {
+    width: 40rem;
+    height: auto;
+    clip-path: polygon(29% 2%, 100% 23%, 88% 96%, 20% 100%, 0% 38%);
+
+}
+
+.container {
+    width: 80%;
+    margin-top: 20rem;
+    padding-bottom: 10rem;
+    height: 100%;
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    left: auto;
+    right: 5%;
+    z-index: -1;
+}
+
+
+.skills > li {
+  list-style-type: none;
+}
+
+.skills > li > h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.skills {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+}
+
+.skills li {
+  margin: 10px 0;
+}
+
+.bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  height: 1rem;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 30rem;
+}
+
+.bar span {
+  height: 1rem;
+  float: left;
+  background-color: #005960;
+}
+
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 80%;
+}
+
+.javascript {
+  width: 70%;
+}
+
+.react {
+  width: 70%;
+}
+
+.typescript {
+  width: 55%;
+}
