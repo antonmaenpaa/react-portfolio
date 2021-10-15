@@ -64,6 +64,7 @@
 
     #absolute {
         top: -5rem;
+        opacity: .6
     }
 
     #mobile-scroll {
