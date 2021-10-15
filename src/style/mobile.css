@@ -62,8 +62,8 @@
         width: 15rem;
     }
 
-    .absolute {
-        right: auto;
+    #absolute {
+        top: -5rem;
     }
 
     #mobile-scroll {
@@ -72,6 +72,10 @@
         top: 100px;
         left: 35%;
         margin-bottom: 1rem;
+    }
+
+    #img-me {
+        top: 5rem;
     }
 
 

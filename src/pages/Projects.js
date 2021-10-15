@@ -36,7 +36,6 @@ function Projects() {
       ease: "power3.inOut",
     });
     gsap.to(".wrapper", 0, {
-      // zIndex: -1,
       display: "flex",
     });
   });

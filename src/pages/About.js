@@ -119,8 +119,8 @@ function About() {
               </li>
             </div>
           </div>
-            <div className="absolute">
-              <img src={me} className="me-img" alt="Anton frontend developer" />
+            <div className="absolute" id="absolute">
+              <img src={me} className="me-img" alt="Anton frontend developer"/>
 
             </div>
           </div>

@@ -46,7 +46,7 @@ function Contact() {
         <div className="transition-container"></div>
         <div className="wrapper full-height centerH centerY">
           <div className="flex column centerY contact-div">
-            <h1 className="content">Get in touch!</h1>
+            <h2 className="content">Get in touch!</h2>
             <p className="contact-p" id="mobile-p">
               Send me an email if you just want to say hi, or if you have some
               business enquiries. Also, check out my socials!
