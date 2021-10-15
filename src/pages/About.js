@@ -1,12 +1,11 @@
-import Header from "./Header";
+import Header from "../components/Header";
 import gsap from "gsap";
 import React, { useEffect } from "react";
 import "../style/mobile.css";
 import "../style/tablet.css";
 import "../style/about.css";
 import "../style/reuseable.css";
-import me from '../images/me.jpg'
-
+import me from '../images/me.jpg';
 
 function About() {
   useEffect(() => {
@@ -71,9 +70,9 @@ function About() {
         <div className="wrapper flex full-width full-height centerH centerY">
         <div className="container flex centerY centerH">
           <div className="aboutme-container flex column centerH" id="container">
-            <div className="flex column">
+            <div className="flex column contact-div">
               <h2 className="content">Hi! I'm Anton</h2>
-              <p className="about-paragraph">
+              <p className="about-paragraph" id="mobile-about-p">
                 I’m a guy who is into web development and web design. I am
                 currently studying to become a frontend developer in Gothenburg,
                 Sweden. <br /><br />I'm always up for new challenges and I really enjoy

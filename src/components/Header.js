@@ -24,6 +24,12 @@ function Header({ headline }) {
         css: {
           opacity: "0",
           display: "none",
+          zIndex: 0,
+        },
+      });
+      gsap.to(".header", {
+        css: {
+          zIndex: 5,
         },
       });
     }
@@ -38,6 +44,12 @@ function Header({ headline }) {
         css: {
           opacity: "1",
           display: "flex",
+          zIndex: 200,
+        },
+      });
+      gsap.to(".header", {
+        css: {
+          zIndex: 300,
         },
       });
 

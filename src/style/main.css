@@ -15,9 +15,14 @@
 .social-div {
     padding: 1rem;
     margin-left: 5%;
+    z-index: 50;
 }
 
-.social-div > img {
+.social-div > a > img {
     padding: 1rem;
-    width: 5rem;
+    width: 4rem;
+}
+
+.social-div > .alink {
+    cursor: pointer;
 }

@@ -9,9 +9,10 @@
 .about-paragraph {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 70%;
-  line-height: 2.5rem;
-  font-size: x-large;
+  width: 80%;
+  line-height: 2.2rem;
+  font-size: 1.4rem;
+  color: #005960
 }
 
 .me-img {
@@ -20,6 +21,13 @@
     clip-path: polygon(29% 2%, 100% 23%, 88% 96%, 20% 100%, 0% 38%);
 
 }
+
+.content {
+  font-size: 3rem;
+  font-family: 'Rage';
+  color: #005960;
+}
+
 
 .container {
     width: 80%;
@@ -53,6 +61,7 @@
   justify-content: center;
   flex-direction: column;
   color: black;
+  padding-bottom: 3rem;
 }
 
 .skills li {

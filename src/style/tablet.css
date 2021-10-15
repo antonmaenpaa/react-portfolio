@@ -1,5 +1,6 @@
 @media(max-width: 70em) {
 
+    /* ABOUT ME */
     div > .about-paragraph {
         width: 100%;
         font-size: smaller;
@@ -11,5 +12,33 @@
         height: auto;
         clip-path: polygon(29% 2%, 100% 23%, 88% 96%, 20% 100%, 0% 38%);
     
+    }
+
+    /* PROJECTS */
+
+    .project-div {
+        white-space: nowrap;
+        position: static;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        justify-content: flex-start;
+    }
+
+    .project-div .project-container {
+        display: inline-block;
+        float: none;
+        height: 60%;
+        margin: 0 0.25%;
+        left: -50px;
+        right: -50px;
+        
+    }
+
+    .tablet-scroll {
+        display: unset;
+        position: absolute;
+        top: 100px;
+        left: 43%;
+        margin-bottom: 1rem;
     }
 }

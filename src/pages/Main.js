@@ -1,7 +1,8 @@
 import gsap from "gsap";
-import Header from "./Header";
+import Header from "../components/Header";
 import { useEffect } from "react";
 import "../style/reuseable.css";
+import "../style/mobile.css";
 import "../style/main.css";
 import bg from "../images/Bakgrund2.mp4";
 import instagram from "../images/instagram.png";
@@ -39,9 +40,28 @@ function Main() {
               Your browser does not support HTML5 video.
             </video>
             <div className="flex column social-div">
-              <img src={instagram} alt="instagram" />
+              <a 
+                className="alink"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/antonmaenpaa/">
+
+                <img src={instagram} alt="instagram" />
+              </a>
+              <a 
+                className="alink"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/anton-m%C3%A4enp%C3%A4%C3%A4-6124b4190/">
               <img src={linkedin} alt="linkedin" />
+              </a>
+              <a 
+                className="alink"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/antonmaenpaa">
               <img src={github} alt="github" />
+              </a>
             </div>
           </div>
         </div>

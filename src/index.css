@@ -10,7 +10,7 @@ html, body {
   height: 100%;
   width: 100%;
   -webkit-overflow-scrolling: touch;
-  font-family: 'helvetica', sans-serif;
+  font-family: 'lucida Sans Unicode';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -18,9 +18,6 @@ html, body {
   overflow: hidden;
 }
 
-h2 {
-  font-family: 'Dawning of a New Day', cursive;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -31,3 +28,4 @@ code {
   width: 100%;
   height: 100%;
 }
+
