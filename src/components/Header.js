@@ -14,7 +14,7 @@ function Header({ headline }) {
   };
 
   useEffect(() => {
-    if (menuIsToggled === false) {
+    if (!menuIsToggled) {
       gsap.to("#menu", {
         duration: 0.8,
         ease: "power3.inOut",
@@ -24,6 +24,7 @@ function Header({ headline }) {
         css: {
           opacity: "0",
           display: "none",
+          overflow: 'hidden',
           zIndex: 0,
         },
       });
@@ -33,7 +34,7 @@ function Header({ headline }) {
         },
       });
     }
-    if (menuIsToggled === true) {
+    if (menuIsToggled) {
       gsap.to("#menu", {
         duration: 0.8,
         ease: "power3.inOut",
@@ -83,7 +84,7 @@ function Header({ headline }) {
     });
   };
 
-
+  console.log(menuIsToggled)
   return (
     <>
       <div className="header flex centerY centerH">

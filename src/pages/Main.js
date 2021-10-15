@@ -31,7 +31,7 @@ function Main() {
 
   return (
     <>
-    <Header headline />
+    <Header />
       <div className="head-container flex full-width full-height centerH centerY">
         <div className="mobile-bg flex full-width full-height centerH centerY">
           <div className="wrapper full-height full-width">
@@ -39,7 +39,7 @@ function Main() {
               <source src={bg} type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>
-            <div className="flex column social-div">
+            <div className="flex column social-div" id="mobile-social-main">
               <a 
                 className="alink"
                 target="_blank"
