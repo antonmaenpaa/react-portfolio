@@ -44,9 +44,9 @@ function About() {
         ".css",
         ".javascript",
         ".react",
-        ".bootstrap",
-        ".angular",
         ".typescript",
+        ".next",
+        ".node",
       ],
       1,
       {
@@ -115,6 +115,18 @@ function About() {
                 <h3>TYPESCRIPT</h3>
                 <span className="bar">
                   <span className="typescript"></span>
+                </span>
+              </li>
+              <li>
+                <h3>NEXT</h3>
+                <span className="bar">
+                  <span className="next"></span>
+                </span>
+              </li>
+              <li>
+                <h3>NODE</h3>
+                <span className="bar">
+                  <span className="node"></span>
                 </span>
               </li>
             </div>

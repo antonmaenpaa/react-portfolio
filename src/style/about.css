@@ -91,13 +91,19 @@
 }
 
 .javascript {
-  width: 70%;
+  width: 80%;
 }
 
 .react {
-  width: 70%;
+  width: 80%;
 }
 
 .typescript {
+  width: 70%;
+}
+.next {
   width: 55%;
+}
+.node {
+  width: 60%;
 }
