@@ -61,12 +61,14 @@
     }
 
     .container > .aboutme-container {
-        margin-top: 20rem;
+        margin-top: 10rem;
     }
 
     .skills > li > .bar  {
         width: 15rem;
     }
+
+    /* PROJECTS */
 
     #absolute {
         top: -5rem;

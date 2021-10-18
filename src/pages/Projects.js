@@ -40,7 +40,6 @@ function Projects() {
     });
   });
 
-
   return (
     <>
       <Header headline="PROJECTS." />
@@ -48,10 +47,9 @@ function Projects() {
         <div className="transition-container"></div>
         <div className="wrapper flex full-height full-width centerH centerY">
           <div className="project-div flex full-height full-width centerH centerY">
-
             <div className="tablet-scroll" id="mobile-scroll">
-               SWIPE FOR MORE
-               </div>
+              SWIPE FOR MORE
+            </div>
             {projects.map((project) => (
               <ProjectCard
                 title={project.title}
