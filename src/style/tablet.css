@@ -1,43 +1,45 @@
-@media(max-width: 70em) {
+@media (max-width: 70em) {
+  /* ABOUT ME */
+  div > .about-paragraph {
+    width: 100%;
+    line-height: 2rem;
+  }
 
-    /* ABOUT ME */
-    div > .about-paragraph {
-        width: 100%;
-        line-height: 2rem;
-    }
+  .me-img {
+    width: 20rem;
+    height: auto;
+    clip-path: polygon(29% 2%, 100% 23%, 88% 96%, 20% 100%, 0% 38%);
+  }
 
-    .me-img {
-        width: 20rem;
-        height: auto;
-        clip-path: polygon(29% 2%, 100% 23%, 88% 96%, 20% 100%, 0% 38%);
-    
-    }
+  #about-mobile {
+    background-image: url("../images/me.jpg");
+    background-position: center;
+  }
 
-    /* PROJECTS */
+  /* PROJECTS */
 
-    .project-div {
-        white-space: nowrap;
-        position: static;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        justify-content: flex-start;
-    }
+  .project-div {
+    white-space: nowrap;
+    position: static;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: flex-start;
+  }
 
-    .project-div .project-container {
-        display: inline-block;
-        float: none;
-        height: 60%;
-        margin: 0 0.25%;
-        left: -50px;
-        right: -50px;
-        
-    }
+  .project-div .project-container {
+    display: inline-block;
+    float: none;
+    height: 60%;
+    margin: 0 0.25%;
+    left: -50px;
+    right: -50px;
+  }
 
-    .tablet-scroll {
-        display: unset;
-        position: absolute;
-        top: 100px;
-        left: 43%;
-        margin-bottom: 1rem;
-    }
+  .tablet-scroll {
+    display: unset;
+    position: absolute;
+    top: 100px;
+    left: 43%;
+    margin-bottom: 1rem;
+  }
 }

@@ -104,7 +104,7 @@ function Header({ headline }) {
       </div>
 
       <ul id="menu" onMouseMove={handleContent} onMouseLeave={reverseContent}>
-        <div className="flex column centerY centerH link-container">
+        <div className="flex column centerH align-end link-container">
           <Link className="links flex" onClick={closeMenuAndNavigate} to="/">
             <div className="mobile">
               <span>GO BACK TO&nbsp;</span>
@@ -143,7 +143,7 @@ function Header({ headline }) {
           </Link>
 
           </div>
-          <div className="flex nav-social space-between">
+          <div className="flex nav-social centerH">
             <a className="social-links" target="_blank" rel="noreferrer" href="https://www.instagram.com/antonmaenpaa/">
               INSTAGRAM
             </a>
@@ -151,7 +151,7 @@ function Header({ headline }) {
               LINKEDIN
             </a>
             <a className="social-links" target="_blank" rel="noreferrer" href="https://github.com/antonmaenpaa">
-              GIHUB
+              GITHUB
             </a>
         </div>
       </ul>
