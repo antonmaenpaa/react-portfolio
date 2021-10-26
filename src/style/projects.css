@@ -2,6 +2,7 @@
   color: #005960;
   height: 90%;
   width: 80%;
+  height: 80%;
   padding: 1rem;
   cursor: pointer;
 }
@@ -9,7 +10,6 @@
   color: #005960;
   cursor: pointer;
   height: 80%;
-  /* padding: 1rem; */
   z-index: 9999;
   top: 0;
 }
