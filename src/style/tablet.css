@@ -19,17 +19,15 @@
   /* PROJECTS */
 
   .project-div {
-    white-space: nowrap;
     position: static;
     overflow-x: scroll;
     overflow-y: hidden;
     justify-content: flex-start;
   }
 
-  .project-div .project-container {
-    display: inline-block;
+  .project-div .project-container-one {
     float: none;
-    height: 60%;
+    height: 70%;
     margin: 0 0.25%;
     left: -50px;
     right: -50px;
@@ -41,5 +39,13 @@
     top: 100px;
     left: 43%;
     margin-bottom: 1rem;
+  }
+  h5 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #project-img {
+    height: 90%;
   }
 }

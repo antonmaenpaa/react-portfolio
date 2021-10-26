@@ -1,46 +1,52 @@
-
-
-.project-container {
-    color: #005960;
-    height: 90%;
-    padding: 1rem;
-    cursor: pointer;
-
+.project-container-one {
+  color: #005960;
+  height: 90%;
+  width: 80%;
+  padding: 1rem;
+  cursor: pointer;
 }
-.project-container > #project-link{
-    color: #005960;
-    cursor: pointer;
-    height: 80%;
-    padding: 1rem;
-    z-index: 9999;
-    top: 0;
-
+.project-container-one > #project-link {
+  color: #005960;
+  cursor: pointer;
+  height: 80%;
+  /* padding: 1rem; */
+  z-index: 9999;
+  top: 0;
 }
 
-.project-container > a#project-link:hover {
-    position: relative; 
-    top: -10px;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
+.project-container-one > a#project-link:hover {
+  position: relative;
+  top: -10px;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
-
 
 #project-img {
-    object-fit: cover;
-    object-position: center;
-    height: 100%;
-    border-radius: 34px;
-    }
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  border-radius: 34px;
+}
 
 .project-div {
-    margin-top: 5rem;
-    width: 80%;
-    z-index: 99999;
+  margin-top: 5rem;
+  width: 80%;
+  height: 90%;
+  z-index: 99999;
 }
 
 .tablet-scroll {
-    display: none;
+  display: none;
+}
+
+.project-container-one > h2 {
+    text-align: center;
+}
+
+h5 {
+  width: 70%;
+  text-align: center;
 }

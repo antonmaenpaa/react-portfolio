@@ -89,6 +89,22 @@
     top: 5rem;
   }
 
+  #project-img {
+    height: 100%;
+  }
+  .project-container-one > h2 {
+    font-size: 1.2rem;
+  }
+  .project-container-one > h5 {
+    font-size: .7rem;
+  }
+
+  .wrapper > .project-div {
+    width: 100%;
+  }
+
+
+
   /* CONTACT */
 
   .social-contact-div {
