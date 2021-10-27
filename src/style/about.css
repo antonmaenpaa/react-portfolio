@@ -78,11 +78,11 @@
 }
 
 .html {
-  width: 90%;
+  width: 95%;
 }
 
 .css {
-  width: 80%;
+  width: 90%;
 }
 
 .javascript {
@@ -97,15 +97,8 @@
   width: 70%;
 }
 .next {
-  width: 55%;
-}
-.node {
   width: 60%;
 }
-
-@media (max-width: 1000px) {
-  .container {
-    /* background-size: calc(100% - 200px); */
-    /* background-position: center; */
-  }
+.node {
+  width: 65%;
 }

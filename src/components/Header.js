@@ -24,7 +24,7 @@ function Header({ headline }) {
         css: {
           opacity: "0",
           display: "none",
-          overflow: 'hidden',
+          overflow: "hidden",
           zIndex: 0,
         },
       });
@@ -84,14 +84,13 @@ function Header({ headline }) {
     });
   };
 
-  console.log(menuIsToggled)
   return (
     <>
       <div className="header flex centerY centerH">
         <div className="nav-container flex centerY space-between">
           {menuIsToggled ? (
             <Link className="h1-link" onClick={closeMenuAndNavigate} to="/">
-              <h1>HOME.</h1>{" "}
+              <h1>MENU.</h1>{" "}
             </Link>
           ) : (
             <h1>{headline}</h1>
@@ -141,18 +140,32 @@ function Header({ headline }) {
             </div>
             CONTACT ME
           </Link>
-
-          </div>
-          <div className="flex nav-social centerH">
-            <a className="social-links" target="_blank" rel="noreferrer" href="https://www.instagram.com/antonmaenpaa/">
-              INSTAGRAM
-            </a>
-            <a className="social-links" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anton-m%C3%A4enp%C3%A4%C3%A4-6124b4190/">
-              LINKEDIN
-            </a>
-            <a className="social-links" target="_blank" rel="noreferrer" href="https://github.com/antonmaenpaa">
-              GITHUB
-            </a>
+        </div>
+        <div className="flex nav-social centerH">
+          <a
+            className="social-links"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/antonmaenpaa/"
+          >
+            INSTAGRAM
+          </a>
+          <a
+            className="social-links"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/anton-m%C3%A4enp%C3%A4%C3%A4-6124b4190/"
+          >
+            LINKEDIN
+          </a>
+          <a
+            className="social-links"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/antonmaenpaa"
+          >
+            GITHUB
+          </a>
         </div>
       </ul>
     </>
