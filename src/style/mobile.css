@@ -39,6 +39,10 @@
     margin-left: 0%;
   }
 
+  #mobile-social-main > a > img {
+    width: 3.5rem;
+  }
+
   /* ABOUT ME */
 
   #mobile-about-p {
