@@ -130,9 +130,15 @@ function About() {
                   </span>
                 </li>
                 <li>
-                  <h3>NODE</h3>
+                  <h3>PHP</h3>
                   <span className="bar">
-                    <span className="node"></span>
+                    <span className="php"></span>
+                  </span>
+                </li>
+                <li>
+                  <h3>WORDPRESS</h3>
+                  <span className="bar">
+                    <span className="wordpress"></span>
                   </span>
                 </li>
               </div>

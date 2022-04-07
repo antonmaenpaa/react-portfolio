@@ -78,27 +78,30 @@
 }
 
 .html {
-  width: 95%;
+  width: 100%;
 }
 
 .css {
-  width: 90%;
+  width: 100%;
 }
 
 .javascript {
-  width: 80%;
+  width: 100%;
 }
 
 .react {
-  width: 80%;
+  width: 95%;
 }
 
 .typescript {
-  width: 70%;
+  width: 80%;
 }
 .next {
-  width: 60%;
+  width: 90%;
 }
-.node {
+.php {
   width: 65%;
+}
+.wordpress {
+  width: 80%;
 }
