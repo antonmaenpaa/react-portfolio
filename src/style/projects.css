@@ -9,7 +9,7 @@
 .project-container-one > #project-link {
   color: #005960;
   cursor: pointer;
-  height: 80%;
+  height: 100%;
   z-index: 9999;
   top: 0;
 }
