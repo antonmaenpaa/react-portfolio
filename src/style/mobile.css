@@ -64,6 +64,14 @@
     margin-top: 35rem;
   }
 
+  .skills{
+    flex-direction: column;
+  }
+
+  .skills > div:first-child {
+    margin-right: 0rem !important;
+  }
+
   .skills > li > .bar {
     width: 15rem;
   }

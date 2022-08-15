@@ -46,6 +46,9 @@ function About() {
         ".typescript",
         ".next",
         ".node",
+        ".jquery",
+        ".wordpress",
+        ".php",
       ],
       1,
       {
@@ -76,8 +79,7 @@ function About() {
                 <h2 className="content">Hi! I'm Anton</h2>
                 <p className="about-paragraph" id="mobile-about-p">
                   I’m a guy who is into web development and web design. I am
-                  currently studying to become a frontend developer at
-                  Medieinstitutet in Gothenburg, Sweden. <br />
+                  currently based in Stockholm, Sweden. <br />
                   <br />
                   I'm always up for new challenges and I really enjoy writing
                   code and come up with nice and smooth designs. I strive to
@@ -89,52 +91,77 @@ function About() {
                 </p>
               </div>
               <div className="skills">
-                <li>
-                  <h3>HTML</h3>
-                  <span className="bar">
-                    <span className="html"></span>
-                  </span>
-                </li>
+                <div className="flex column">
+                  <li>
+                    <h3>HTML</h3>
+                    <span className="bar">
+                      <span className="html"></span>
+                    </span>
+                  </li>
 
-                <li>
-                  <h3>CSS</h3>
-                  <span className="bar">
-                    <span className="css"></span>
-                  </span>
-                </li>
+                  <li>
+                    <h3>CSS</h3>
+                    <span className="bar">
+                      <span className="css"></span>
+                    </span>
+                  </li>
 
-                <li>
-                  <h3>JAVASCRIPT</h3>
-                  <span className="bar">
-                    <span className="javascript"></span>
-                  </span>
-                </li>
+                  <li>
+                    <h3>JAVASCRIPT</h3>
+                    <span className="bar">
+                      <span className="javascript"></span>
+                    </span>
+                  </li>
 
-                <li>
-                  <h3>REACT</h3>
-                  <span className="bar">
-                    <span className="react"></span>
-                  </span>
-                </li>
+                  <li>
+                    <h3>JQUERY</h3>
+                    <span className="bar">
+                      <span className="jquery"></span>
+                    </span>
+                  </li>
 
-                <li>
-                  <h3>TYPESCRIPT</h3>
-                  <span className="bar">
-                    <span className="typescript"></span>
-                  </span>
-                </li>
-                <li>
-                  <h3>NEXT</h3>
-                  <span className="bar">
-                    <span className="next"></span>
-                  </span>
-                </li>
-                <li>
-                  <h3>NODE</h3>
-                  <span className="bar">
-                    <span className="node"></span>
-                  </span>
-                </li>
+                  <li>
+                    <h3>PHP</h3>
+                    <span className="bar">
+                      <span className="php"></span>
+                    </span>
+                  </li>
+                </div>
+
+                <div className="flex column">
+                  <li>
+                    <h3>WORDPRESS</h3>
+                    <span className="bar">
+                      <span className="wordpress"></span>
+                    </span>
+                  </li>
+
+                  <li>
+                    <h3>REACT</h3>
+                    <span className="bar">
+                      <span className="react"></span>
+                    </span>
+                  </li>
+
+                  <li>
+                    <h3>TYPESCRIPT</h3>
+                    <span className="bar">
+                      <span className="typescript"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <h3>NEXT</h3>
+                    <span className="bar">
+                      <span className="next"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <h3>NODE</h3>
+                    <span className="bar">
+                      <span className="node"></span>
+                    </span>
+                  </li>
+                </div>
               </div>
             </div>
             {/* <div className="absolute" id="absolute">
