@@ -1,7 +1,7 @@
 .project-container-one {
   color: #005960;
   height: 90%;
-  width: 80%;
+  width: 100%;
   height: 80%;
   padding: 1rem;
   cursor: pointer;
@@ -9,7 +9,7 @@
 .project-container-one > #project-link {
   color: #005960;
   cursor: pointer;
-  height: 100%;
+  height: 80%;
   z-index: 9999;
   top: 0;
 }
