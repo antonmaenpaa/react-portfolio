@@ -16,6 +16,8 @@
     padding: 1rem 0 0 0;
     margin-left: 4%;
     z-index: 50;
+    position: absolute;
+    top: 0;
 }
 
 .social-div > a > img {
@@ -26,3 +28,5 @@
 .social-div > .alink {
     cursor: pointer;
 }
+
+

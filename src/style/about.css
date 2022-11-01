@@ -4,13 +4,16 @@
 
 .aboutme-container {
   width: 80%;
-  margin-top: 30rem;
+}
+
+.wrapper {
+  z-index: 1 !important;
 }
 
 .about-paragraph {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 70%;
+  width: 60%;
   line-height: 2.2rem;
   font-size: 1.4rem;
   color: #005960;
@@ -26,11 +29,18 @@
   font-size: 3rem;
   color: #005960;
 }
-.container {
-  background-image: url("../images/anton.jpg");
-  background-size: contain;
+.about-head {
+  background-image: url("../images/anton.webp");
+  background-size: cover;
   background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
+
 
 .absolute {
   position: absolute;
@@ -63,24 +73,22 @@
 
 .skills > div:first-child {
   margin-right: 2rem;
-  width: 40%;
+  width: 30%;
 }
 .skills > div:nth-child(2) {
-  /* margin-right: 2rem; */
-  width: 40%;
+  width: 30%;
 }
 
 .bar {
   background-color: rgba(0, 0, 0, 0.5);
   display: block;
-  height: 1.5rem;
+  height: .8rem;
   border-radius: 34px;
   overflow: hidden;
-  /* width: 30rem; */
 }
 
 .bar span {
-  height: 1.5rem;
+  height: .8rem;
   float: left;
   background-color: #005960;
 }

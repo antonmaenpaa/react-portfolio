@@ -93,7 +93,7 @@ function Header({ headline }) {
               <h1>MENU.</h1>{" "}
             </Link>
           ) : (
-            <h1>{headline}</h1>
+            <div className="headline">{headline}</div>
           )}
 
           <div className="burger-div">

@@ -1,0 +1,96 @@
+.scroll-container {
+    margin-top: 3rem;
+}
+
+.bars {
+    width: 2rem;
+    height: 4px;
+    border-radius: 10px;
+    margin-right: 0.3rem;
+    background-color: var(--color-light-grey);
+  }
+
+  .bars.current {
+      background: black;
+  }
+
+.mainScrollContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+  .flex-end {
+    align-items: flex-end;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+
+  .align-start {
+    align-items: flex-start;
+  }
+
+  .scrollContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+
+    }
+.scrollContainer::-webkit-scrollbar {
+    display: none;
+}
+
+  .next-btn {
+    position: absolute;
+    top: 40%;
+    right: 2rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+
+    
+}
+.next > .arrow-next {
+  transform: rotate(180deg);
+  margin-left: -.3rem;
+  margin-bottom: .1rem;
+}
+  .prev {
+    position: absolute;
+    top: 40%;
+    left: 2rem;
+    border: 1px solid var(--color-royal-blue);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-white);
+
+}
+.prev > .arrow-prev {
+  margin-right: -.3rem;
+  margin-top: .1rem;
+}
+
+
+  @media (max-width: 768px) {
+    .scrollContainer {
+      justify-content: start;
+    }
+  }

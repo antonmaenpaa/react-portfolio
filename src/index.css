@@ -10,12 +10,22 @@ html, body {
   height: 100%;
   width: 100%;
   -webkit-overflow-scrolling: touch;
-  font-family: 'lucida Sans Unicode';
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  overflow-y: scroll;
-  overflow: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 

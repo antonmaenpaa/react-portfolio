@@ -1,34 +1,43 @@
 .project-container-one {
   color: #005960;
-  height: 90%;
-  width: 100%;
-  height: 80%;
+  width: 50rem;
+  height: 30rem;
   padding: 1rem;
   cursor: pointer;
+  position: relative;
+  border: 3px solid #005960;
+  padding: 1rem;
+  margin: 1rem;
+  text-decoration: none;
 }
-.project-container-one > #project-link {
-  color: #005960;
-  cursor: pointer;
-  height: 80%;
-  z-index: 9999;
-  top: 0;
+.project-container-one:hover .contain {
+  display:block ;
+  /* opacity: 1; */
+  transition: 0.5s;
 }
 
-.project-container-one > a#project-link:hover {
-  position: relative;
-  top: -10px;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
+.contain {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: all 0.5s;
+  color: white;
+
 }
+
+.contain-mobile {
+  display: none;
+}
+
 
 #project-img {
   object-fit: cover;
   object-position: center;
-  height: 100%;
-  border-radius: 34px;
+  height: 90%;
 }
 
 .project-div {
@@ -49,4 +58,34 @@
 h5 {
   width: 70%;
   text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h5 {
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .project-container-one {
+    width: 100%;
+  }
+
+  .contain-mobile {
+    display: flex;
+    padding-top: 2rem;
+    color: black;
+  }
+
+  #project-img {
+    height: 40% !important;
+  }
+
+  .contain {
+    display: none !important;
+  }
+
+
 }

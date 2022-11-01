@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import "../style/reuseable.css";
 import "../style/mobile.css";
 import "../style/main.css";
-import bg from "../images/Bakgrund2.mp4";
+import bg from "../images/0001-0072.mp4";
 import instagram from "../images/instagram.png";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
@@ -33,7 +33,7 @@ function Main() {
     <>
     <Header />
       <div className="head-container flex full-width full-height centerH centerY">
-        <div className="mobile-bg flex full-width full-height centerH centerY">
+        <div className="mobile-bg flex full-width   centerH centerY">
           <div className="wrapper full-height full-width">
             <video autoPlay muted loop className="myVideo">
               <source src={bg} type="video/mp4" />
