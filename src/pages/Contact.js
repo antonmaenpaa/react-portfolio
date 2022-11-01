@@ -53,7 +53,7 @@ function Contact() {
             </p>
             <a href="mailto:antonmaenpaa@gmail.com"><img src={mail} alt="mail anton" className="mail-icon" />
                     </a>
-                <p class="mail-p" id="contact-p">
+                <p className="mail-p" id="contact-p">
                     antonmaenpaa@gmail.com
                 </p>
             <div className="flex social-contact-div centerH space-between" id="mobile-social">
