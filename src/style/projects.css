@@ -1,6 +1,6 @@
 .project-container-one {
   color: #005960;
-  width: 50rem;
+  width: 40rem;
   height: 30rem;
   padding: 1rem;
   cursor: pointer;
@@ -9,11 +9,20 @@
   padding: 1rem;
   margin: 1rem;
   text-decoration: none;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  transition: all 0.3s ease-in-out;
 }
 .project-container-one:hover .contain {
   display:block ;
-  /* opacity: 1; */
-  transition: 0.5s;
+  transition: all 0.3s ease-in-out;
+
+  
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 .contain {
@@ -37,7 +46,7 @@
 #project-img {
   object-fit: cover;
   object-position: center;
-  height: 90%;
+  height: 80%;
 }
 
 .project-div {
@@ -45,6 +54,8 @@
   width: 80%;
   height: 90%;
   z-index: 99999;
+  transition: all 0.3s ease-in-out;
+
 }
 
 .tablet-scroll {
@@ -62,15 +73,21 @@ h5 {
 
 h2 {
   font-weight: 400;
+  text-align: center;
 }
 
 h5 {
   font-weight: 300;
 }
 
+.tablet-margin {
+  display:none;
+}
+
 @media (max-width: 768px) {
   .project-container-one {
-    width: 100%;
+    width: 20rem;
+    margin-right: 1rem;
   }
 
   .contain-mobile {
