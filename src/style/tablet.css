@@ -18,6 +18,11 @@
 
   /* PROJECTS */
 
+  .tablet-margin {
+    display: unset;
+    width: 1rem;
+  }
+
   .project-div {
     position: static;
     overflow-x: scroll;
@@ -46,6 +51,10 @@
   }
 
   #project-img {
-    height: 90%;
+    height: 70%;
+  }
+
+  .scrollContainer {
+    justify-content: start !important;
   }
 }

@@ -46,11 +46,12 @@ function Projects() {
       <Header headline="PROJECTS." />
       <div className="project-container flex full-width full-height">
         <div className="transition-container"></div>
-        <div className="wrapper flex full-height full-width centerH centerY">
+        <div className="wrapper flex full-height full-width centerH centerY scroll-container">
 
             <Swipe count={projects.length} showArrows={false} showBars={false} className="justify-center">
               {projects.map((project, index) => (
                 <React.Fragment key={index}>
+                  <div className="tablet-margin" />
                   <ProjectCard
                     title={project.title}
                     description={project.description}
