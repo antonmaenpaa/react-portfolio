@@ -67,10 +67,10 @@ function About() {
   return (
     <>
       <Header headline="ABOUT ME." />
-      <div className="head-container flex full-width full-height centerH centerY ">
+      <div className="flex full-width full-height centerH centerY about-main-container">
         <div className="transition-container"></div>
         <div className="wrapper flex full-width full-height centerH centerY about-head" id="about-mobile">
-          <div className="container flex centerY centerH " >
+          <div className="container flex centerY centerH">
             <div
               className="aboutme-container flex column centerH"
               id="container"

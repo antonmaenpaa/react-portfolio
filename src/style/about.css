@@ -4,6 +4,7 @@
 
 .aboutme-container {
   width: 80%;
+  padding: 15rem 0;
 }
 
 .wrapper {
@@ -28,6 +29,7 @@
 .content {
   font-size: 3rem;
   color: #005960;
+  text-align: start;
 }
 .about-head {
   background-image: url("../images/anton.webp");
@@ -110,10 +112,10 @@
 }
 
 .typescript {
-  width: 80%;
+  width: 90%;
 }
 .next {
-  width: 70%;
+  width: 90%;
 }
 .node {
   width: 70%;

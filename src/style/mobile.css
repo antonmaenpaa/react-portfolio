@@ -57,6 +57,10 @@
     min-height: 100%;
   }
 
+  .aboutme-container {
+    padding: 0;
+  }
+
   .contact-div {
     margin-top: 7rem;
   }

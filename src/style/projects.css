@@ -6,7 +6,7 @@
   cursor: pointer;
   position: relative;
   border: 3px solid #005960;
-  padding: 1rem;
+  padding: 2rem;
   margin: 1rem;
   text-decoration: none;
   flex-shrink: 0;
@@ -16,8 +16,6 @@
 .project-container-one:hover .contain {
   display:block ;
   transition: all 0.3s ease-in-out;
-
-  
 }
 
 .scroll-container {
@@ -42,20 +40,17 @@
   display: none;
 }
 
-
-#project-img {
-  object-fit: cover;
-  object-position: center;
-  height: 80%;
-}
-
 .project-div {
   margin-top: 5rem;
   width: 80%;
   height: 90%;
   z-index: 99999;
   transition: all 0.3s ease-in-out;
+}
 
+.project-inner-container {
+  width: 100%;
+  height: 100%;
 }
 
 .tablet-scroll {
