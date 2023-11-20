@@ -51,21 +51,8 @@ function Contact() {
               Send me an email if you just want to say hi, or if you have some
               business enquiries. Also, check out my socials!
             </p>
-            <a href="mailto:antonmaenpaa@gmail.com"><img src={mail} alt="mail anton" className="mail-icon" />
-                    </a>
-                <p className="mail-p" id="contact-p">
-                    antonmaenpaa@gmail.com
-                </p>
-            <div className="flex social-contact-div centerH space-between" id="mobile-social">
-              <a href="https://www.instagram.com/antonmaenpaa/" rel="noreferrer" target="_blank" id="mobile-a" className="first-a">
-                <span>Instagram</span>
-              </a>
-              <a href="https://www.linkedin.com/in/anton-m%C3%A4enp%C3%A4%C3%A4-6124b4190/" rel="noreferrer" target="_blank" id="mobile-a" className="middle-a">
-                <span>LinkedIn</span>
-              </a>
-              <a href="https://github.com/antonmaenpaa" rel="noreferrer" target="_blank" id="mobile-a" className="third-a">
-                <span>GitHub</span>
-              </a>
+            <div className="flex space-x-2">
+              <a href="mailto:antonmaenpaa@gmail.com"><img src={mail} alt="mail anton" className="mail-icon" /></a>
             </div>
           </div>
         </div>

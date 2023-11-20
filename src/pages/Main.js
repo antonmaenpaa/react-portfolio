@@ -11,8 +11,6 @@ import linkedin from "../images/linkedin.png";
 
 function Main() {
   useEffect(() => {
-
-
     gsap.from(".wrapper", 2, {
       delay: 0.5,
       opacity: 0,
@@ -66,7 +64,6 @@ function Main() {
           </div>
         </div>
       </div>
-
     </>
   );
 }

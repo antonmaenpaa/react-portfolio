@@ -14,7 +14,7 @@
   transition: all 0.3s ease-in-out;
 }
 .project-container-one:hover .contain {
-  display:block ;
+  display:  block;
   transition: all 0.3s ease-in-out;
 }
 
@@ -85,10 +85,18 @@ h5 {
     margin-right: 1rem;
   }
 
+  .project-container-one {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .project-inner-container {
+    background-image: none !important;
+  }
+
   .contain-mobile {
     display: flex;
     padding-top: 2rem;
-    color: black;
+    color: white;
   }
 
   #project-img {
