@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Arrow from '../images/arrow.svg';
+import Arrow from '../assets/icons/arrow.svg';
 import ScrollIndicator from './scrollIndicator';
 import '../style/reuseable.css';
 import '../style/carousel.css';
