@@ -28,7 +28,7 @@
   }
 
   .mobile-bg {
-    background-image: url("../images/mobile.webp");
+    background-image: url("../assets/images/mobile.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,6 +42,21 @@
 
   #mobile-social-main > a > img {
     width: 3.5rem;
+  }
+
+  .social-div {
+    flex-direction: row;
+    justify-content: center;
+    bottom: 2rem;
+    left: 0;
+    right: 0 !important;
+    top: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .social-div > a {
+    width: fit-content;
   }
 
   /* ABOUT ME */

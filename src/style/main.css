@@ -14,10 +14,10 @@
 
 .social-div {
     padding: 1rem 0 0 0;
-    margin-left: 4%;
     z-index: 50;
     position: absolute;
-    top: 0;
+    top: 6rem;
+    right: 4.7%;
 }
 
 .social-div > a > img {

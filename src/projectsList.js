@@ -1,5 +1,5 @@
-import triabygg from './images/triabygg1.webp'
-import friwwiretouch from './images/studiofriwwi.webp'
+import triabygg from './assets/images/triabygg1.webp'
+import friwwiretouch from './assets/images/studiofriwwi.webp'
 
 export const projects = [
     {

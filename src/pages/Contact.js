@@ -3,7 +3,7 @@ import gsap from "gsap";
 import "../style/mobile.css";
 import "../style/reuseable.css";
 import "../style/contact.css";
-import mail from '../images/mail.png'
+import mail from '../assets/icons/mail.svg'
 import Header from "../components/Header";
 
 function Contact() {

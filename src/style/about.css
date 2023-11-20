@@ -32,7 +32,7 @@
   text-align: start;
 }
 .about-head {
-  background-image: url("../images/anton.webp");
+  background-image: url("../assets/images/anton.webp");
   background-size: cover;
   background-position: center;
   position: fixed;

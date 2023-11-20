@@ -4,10 +4,10 @@ import { useEffect } from "react";
 import "../style/reuseable.css";
 import "../style/mobile.css";
 import "../style/main.css";
-import bg from "../images/0001-0072.mp4";
-import instagram from "../images/instagram.png";
-import github from "../images/github.png";
-import linkedin from "../images/linkedin.png";
+import bg from "../assets/videos/portfolio_video.mp4";
+import instagram from "../assets/icons/instagram.svg";
+import github from "../assets/icons/github.svg";
+import linkedin from "../assets/icons/linkedin.svg";
 
 function Main() {
   useEffect(() => {
