@@ -33,7 +33,7 @@ const Projects = () => {
                       <img 
                         src={project.img} 
                         alt={project.title} 
-                        className="w-full h-[28rem] object-cover object-top transition-transform duration-700 group-hover:scale-105" 
+                        className="w-full aspect-video object-cover object-top transition-transform duration-700 group-hover:scale-105" 
                       />
                     </a>
                     
