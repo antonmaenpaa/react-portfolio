@@ -467,14 +467,19 @@ function ModernPortfolio(): React.JSX.Element {
                 {projects.map((project, index) => (
                   <RevealOnScroll key={project.id}>
                     <div className="group">
-                      <div className="relative overflow-hidden rounded-lg mb-8 shadow-lg">
+                      <a 
+                        href={project.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="block relative overflow-hidden rounded-lg mb-8 shadow-lg cursor-pointer"
+                      >
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500 z-10 pointer-events-none"></div>
                         <img 
                           src={project.img} 
                           alt={project.title} 
                           className="w-full h-[28rem] object-cover object-top transition-transform duration-700 group-hover:scale-105" 
                         />
-                      </div>
+                      </a>
                       
                       <div className="flex justify-between items-start">
                         <div>
@@ -482,12 +487,24 @@ function ModernPortfolio(): React.JSX.Element {
                           <p className="text-lg text-gray-500 font-light leading-relaxed max-w-xl">
                             {project.description}
                           </p>
+                          
+                          <a 
+                            href={project.href} 
+                            target="_blank" 
+                            rel="noreferrer"
+                            className="md:hidden mt-6 inline-flex items-center gap-2 px-5 py-2 bg-white rounded-full border border-gray-200 shadow-sm text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors"
+                          >
+                            Visit Website
+                            <svg className="w-4 h-4 text-teal-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                          </a>
                         </div>
                         <a 
                           href={project.href} 
                           target="_blank" 
                           rel="noreferrer"
-                          className="hidden md:flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 group-hover:bg-teal-primary group-hover:border-teal-primary group-hover:text-white transition-all duration-300"
+                          className="hidden md:flex shrink-0 ml-4 items-center justify-center w-14 h-14 rounded-full border border-gray-200 group-hover:bg-teal-primary group-hover:border-teal-primary group-hover:text-white transition-all duration-300"
                         >
                           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
