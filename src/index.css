@@ -10,7 +10,7 @@
   }
 
   html, body {
-    @apply m-0 h-full w-full overflow-x-hidden overflow-y-auto bg-transparent;
+    @apply m-0 w-full overflow-x-hidden bg-transparent;
     -webkit-overflow-scrolling: touch;
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -26,7 +26,7 @@
   }
 
   #root {
-    @apply w-full h-full;
+    @apply w-full;
   }
 }
 
