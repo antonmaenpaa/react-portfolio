@@ -55,7 +55,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
                   <img 
                     src={meBg} 
                     alt="Anton Maenpaa" 
-                    className="w-full h-full object-cover object-[center_20%] scale-110"
+                    className="w-full h-full object-cover object-[center_80%] scale-110"
                   />
                 </div>
               </div>
