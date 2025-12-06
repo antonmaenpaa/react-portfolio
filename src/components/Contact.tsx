@@ -31,7 +31,7 @@ const Contact = () => {
                     <p className="text-sm md:text-base text-teal-primary font-medium tracking-[0.2em] uppercase">Start a conversation</p>
                     <a 
                       href="mailto:antonmaenpaa@gmail.com" 
-                      className="block text-3xl sm:text-4xl md:text-5xl font-bold text-white hover:text-teal-primary transition-colors duration-300 leading-none tracking-tight break-all sm:break-normal"
+                      className="block text-3xl sm:text-4xl font-bold text-white hover:text-teal-primary transition-colors duration-300 leading-none tracking-tight break-all sm:break-normal"
                     >
                       antonmaenpaa@gmail.com
                     </a>
