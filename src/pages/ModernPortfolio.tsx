@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, ReactNode } from "react";
+import { Squash as Hamburger } from "hamburger-react";
 import { projects } from "../projectsList";
 import meBg from "../assets/images/IMG_7205.webp";
 
@@ -49,10 +50,12 @@ function ModernPortfolio(): React.JSX.Element {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+      setShowScrollTop(window.scrollY > 300);
       const sections = ["hero", "about", "skills", "projects", "contact"];
       const current = sections.find((section) => {
         const element = document.getElementById(section);
@@ -71,6 +74,14 @@ function ModernPortfolio(): React.JSX.Element {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isMobileMenuOpen]);
+
   const scrollToSection = (id: string) => {
     setIsMobileMenuOpen(false);
     const element = document.getElementById(id);
@@ -88,10 +99,10 @@ function ModernPortfolio(): React.JSX.Element {
         }`}
       >
         <div 
-          className={`w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-300`}
+          className={`w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-300 relative z-[100000]`}
         >
           <div className={`rounded-full transition-all duration-300 ${
-            isScrolled ? "bg-white/80 backdrop-blur-md shadow-lg border border-white/20 px-6 py-3" : "bg-transparent px-0 py-0"
+            isScrolled && !isMobileMenuOpen ? "bg-white/80 backdrop-blur-md shadow-lg border border-white/20 px-6 py-3" : "bg-transparent px-0 py-0"
           }`}>
             <div className="flex justify-between items-center">
               <div 
@@ -119,17 +130,14 @@ function ModernPortfolio(): React.JSX.Element {
               </div>
 
               {/* Mobile Menu Button */}
-              <div className="md:hidden">
-                <button 
-                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                  className="p-2 text-gray-600 hover:text-teal-primary focus:outline-none"
-                >
-                  <div className="w-6 h-5 relative flex flex-col justify-between">
-                    <span className={`w-full h-0.5 bg-current rounded-full transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-2" : ""}`} />
-                    <span className={`w-full h-0.5 bg-current rounded-full transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`} />
-                    <span className={`w-full h-0.5 bg-current rounded-full transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-2.5" : ""}`} />
-                  </div>
-                </button>
+              <div className="md:hidden z-[100001] relative">
+                 <Hamburger 
+                    toggled={isMobileMenuOpen} 
+                    toggle={setIsMobileMenuOpen} 
+                    color={isMobileMenuOpen ? "#005960" : "#4B5563"}
+                    size={24}
+                    rounded
+                 />
               </div>
             </div>
           </div>
@@ -141,17 +149,6 @@ function ModernPortfolio(): React.JSX.Element {
             isMobileMenuOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-full pointer-events-none"
           }`}
         >
-          {/* Close Button for better UX */}
-          <button 
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="absolute top-6 right-6 p-2 text-gray-600 hover:text-teal-primary focus:outline-none"
-          >
-            <div className="w-6 h-5 relative flex flex-col justify-center items-center">
-              <span className="w-full h-0.5 bg-current rounded-full rotate-45 absolute" />
-              <span className="w-full h-0.5 bg-current rounded-full -rotate-45 absolute" />
-            </div>
-          </button>
-
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute -top-24 -right-24 w-96 h-96 bg-teal-primary/10 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -605,6 +602,18 @@ function ModernPortfolio(): React.JSX.Element {
           </div>
         </div>
       </footer>
+
+      {/* Scroll to Top Button */}
+      <button 
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className={`fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] p-4 rounded-full bg-white shadow-2xl border border-gray-100 text-teal-primary hover:text-white hover:bg-teal-primary hover:-translate-y-1 transition-all duration-300 ${
+          showScrollTop ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-0 pointer-events-none'
+        }`}
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </button>
     </div>
   );
 }
