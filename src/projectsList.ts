@@ -1,7 +1,15 @@
-import triabygg from './assets/images/triabygg1.webp'
-import friwwiretouch from './assets/images/studiofriwwi.webp'
+import triabygg from './assets/images/triabygg-project.jpg'
+import friwwiretouch from './assets/images/frida-project.webp'
 
-export const projects = [
+export interface Project {
+    title: string;
+    description: string;
+    id: string;
+    href: string;
+    img: string;
+}
+
+export const projects: Project[] = [
     {
         title: 'TRIABYGG Website',
         description: 'Crafted for a Construction Company, this website features a sleek and clean design, presenting essential company information. Developed using Next.js with TypeScript and powered by a user-friendly Wordpress CMS for seamless content management.',
@@ -17,3 +25,4 @@ export const projects = [
         img: friwwiretouch,
     },
 ]
+
