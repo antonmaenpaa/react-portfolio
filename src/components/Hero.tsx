@@ -1,5 +1,4 @@
 import RevealOnScroll from "./RevealOnScroll";
-import meBg from "../assets/images/IMG_7205.webp";
 
 interface HeroProps {
   scrollToSection: (id: string) => void;
@@ -53,7 +52,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
                 <div className="absolute inset-0 bg-teal-primary/20 rounded-full blur-2xl animate-pulse"></div>
                 <div className="relative w-full h-full rounded-full overflow-hidden border-[6px] md:border-[8px] border-white shadow-2xl">
                   <img 
-                    src={meBg} 
+                    src="/avatar.webp" 
                     alt="Anton Maenpaa" 
                     className="w-full h-full object-cover object-[center_80%] scale-110"
                   />
