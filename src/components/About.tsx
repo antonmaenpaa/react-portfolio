@@ -2,7 +2,7 @@ import RevealOnScroll from "./RevealOnScroll";
 
 const About = () => {
   return (
-    <section id="about" className="py-32 bg-white relative">
+    <section id="about" className="pt-0 lg:pt-32 pb-32 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <RevealOnScroll>
@@ -20,7 +20,7 @@ const About = () => {
             </div>
 
             {/* Content */}
-            <div className="md:col-span-8 space-y-16">
+            <div className="md:col-span-8 lg:space-y-16">
               
               {/* Bio Paragraph */}
               <div>
@@ -38,8 +38,8 @@ const About = () => {
               </div>
 
               {/* Experience Timeline - Sleek */}
-              <div className="border-t border-gray-200 pt-12">
-                <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-12">Experience</h4>
+              <div className="border-t border-gray-200 pt-12 mt-12 lg:mt-0">
+                <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest lg:mb-12 -mb-2">Experience</h4>
                 
                 <div className="space-y-0">
                   {/* Biorce */}
