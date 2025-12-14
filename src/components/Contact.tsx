@@ -1,3 +1,4 @@
+import Link from "next/link";
 import RevealOnScroll from "./RevealOnScroll";
 
 const Contact = () => {
@@ -56,7 +57,7 @@ const Contact = () => {
                           { name: "LinkedIn", url: "https://www.linkedin.com/in/anton-m%C3%A4enp%C3%A4%C3%A4-6124b4190/" },
                           { name: "Instagram", url: "https://www.instagram.com/antonmaenpaa/" }
                         ].map((link) => (
-                           <a 
+                           <Link 
                              key={link.name}
                              href={link.url} 
                              target="_blank" 
@@ -65,7 +66,7 @@ const Contact = () => {
                            >
                               {link.name}
                               <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-teal-primary transition-all duration-300 group-hover/link:w-full"></span>
-                           </a>
+                           </Link>
                         ))}
                      </div>
                   </div>

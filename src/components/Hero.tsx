@@ -1,4 +1,7 @@
+"use client";
+
 import RevealOnScroll from "./RevealOnScroll";
+import Image from "next/image";
 
 interface HeroProps {
   scrollToSection: (id: string) => void;
@@ -51,10 +54,13 @@ const Hero = ({ scrollToSection }: HeroProps) => {
               <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[32rem] lg:h-[32rem]">
                 <div className="absolute inset-0 bg-teal-primary/20 rounded-full blur-2xl animate-pulse"></div>
                 <div className="relative w-full h-full rounded-full overflow-hidden border-[6px] md:border-[8px] border-white shadow-2xl">
-                  <img 
+                  <Image 
                     src="/avatar.webp" 
                     alt="Anton Maenpaa" 
-                    className="w-full h-full object-cover object-[center_80%] scale-110"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover object-[center_80%] scale-110"
+                    priority
                   />
                 </div>
               </div>

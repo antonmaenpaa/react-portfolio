@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect, useRef, ReactNode } from "react";
 
 interface RevealOnScrollProps {

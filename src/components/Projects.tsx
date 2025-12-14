@@ -1,5 +1,7 @@
 import RevealOnScroll from "./RevealOnScroll";
 import { projects } from "../projectsList";
+import Image from "next/image";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -30,11 +32,15 @@ const Projects = () => {
                       className="block relative overflow-hidden rounded-lg mb-8 shadow-lg cursor-pointer"
                     >
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500 z-10 pointer-events-none"></div>
-                      <img 
-                        src={project.img} 
-                        alt={project.title} 
-                        className="w-full aspect-video object-cover object-top transition-transform duration-700 group-hover:scale-105" 
-                      />
+                      <div className="w-full aspect-video relative">
+                        <Image 
+                          src={project.img} 
+                          alt={project.title} 
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="object-cover object-top transition-transform duration-700 group-hover:scale-105" 
+                        />
+                      </div>
                     </a>
                     
                     <div className="flex justify-between items-start">
@@ -44,7 +50,7 @@ const Projects = () => {
                           {project.description}
                         </p>
                         
-                        <a 
+                        <Link
                           href={project.href} 
                           target="_blank" 
                           rel="noreferrer"
@@ -54,9 +60,9 @@ const Projects = () => {
                           <svg className="w-4 h-4 text-teal-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                           </svg>
-                        </a>
+                        </Link>
                       </div>
-                      <a 
+                      <Link 
                         href={project.href} 
                         target="_blank" 
                         rel="noreferrer"
@@ -65,7 +71,7 @@ const Projects = () => {
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </RevealOnScroll>

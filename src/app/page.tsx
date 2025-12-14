@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -8,7 +10,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 
-function ModernPortfolio(): React.JSX.Element {
+export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("hero");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -73,5 +75,3 @@ function ModernPortfolio(): React.JSX.Element {
     </div>
   );
 }
-
-export default ModernPortfolio;

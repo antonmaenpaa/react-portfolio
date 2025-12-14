@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +10,6 @@
   html, body {
     @apply m-0 w-full overflow-x-hidden bg-transparent;
     -webkit-overflow-scrolling: touch;
-    font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -25,6 +22,7 @@
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   }
 
+  /* #root is no longer needed in Next.js app directory structure usually, but keeping for safety if referenced elsewhere */
   #root {
     @apply w-full;
   }
@@ -38,4 +36,3 @@
     z-index: 100000;
   }
 }
-

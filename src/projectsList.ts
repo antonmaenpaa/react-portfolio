@@ -1,12 +1,13 @@
 import triabygg from './assets/images/triabygg-project.jpg'
 import friwwiretouch from './assets/images/frida-project.webp'
+import { StaticImageData } from 'next/image';
 
 export interface Project {
     title: string;
     description: string;
     id: string;
     href: string;
-    img: string;
+    img: StaticImageData;
 }
 
 export const projects: Project[] = [
