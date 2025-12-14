@@ -1,0 +1,7 @@
+[build]
+  command = "next build"
+  publish = ".next"
+
+# Optional: Explicitly enable the latest runtime (usually auto-handled)
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

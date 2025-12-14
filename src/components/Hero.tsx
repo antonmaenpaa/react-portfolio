@@ -3,11 +3,14 @@
 import RevealOnScroll from "./RevealOnScroll";
 import Image from "next/image";
 
-interface HeroProps {
-  scrollToSection: (id: string) => void;
-}
+const Hero = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
-const Hero = ({ scrollToSection }: HeroProps) => {
   return (
     <section id="hero" className="min-h-screen relative flex flex-col lg:flex-row items-center justify-center overflow-hidden bg-white pt-16 md:pt-0 pb-8">
       
